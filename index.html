@@ -166,7 +166,8 @@ hr {
 
 <p>Based on the characteristics of the features, scale of measurements and their level of separation, I decided to try either Support Vector Machines or a Multinomial Logistic Regression to perform the classifications.</p>
 
-<p>Follows my implementation of Logistic Regression found in the RWeka package, as implemented through the cater package.</p>
+<p>Follows my implementation of Logistic Regression found in the RWeka package, as implemented through the cater package. Twenty five bootstrap samples were used for cross-validation.
+</p>
 
 <pre><code>## Logistic Model Trees 
 ## 
@@ -252,6 +253,8 @@ hr {
 ## Detection Prevalence    0.284    0.194    0.174    0.164    0.184
 ## Balanced Accuracy       1.000    1.000    0.999    0.998    1.000
 </code></pre>
+
+<p>The performance on the training set was acceptable in predicting the classe.  I expected the performance on the testing set to be worse.  As it turned out, when the results were submitted, the model achieved 100% accuracy.</p>
 
 </body>
 
