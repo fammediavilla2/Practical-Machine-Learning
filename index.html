@@ -259,11 +259,13 @@ hr {
 <h2>Expected Performance on Out of Sample</h2>
 
 <p>The performance on the training set was acceptable in predicting all categories of classe.</p>
-<p>The in-sample error is estimated to be (0.999, 1) with a 95% confidence interval.</p>
-<p>The lowest accurracy for the bootstrap samples (25 of them) was 100%; therefore, I estimated an out of sample</p>
-<p>error rate of (1-max(accuracy)) 0%.  However, this is not realistic.  On other runs I estimated error rates of up to 4%.</p>
-<p>I expected the performance on the testing set to be worse, mainly due to overfitting.</p>
-<p>As it turned out, when the results were submitted, the model achieved 100% accuracy for the testing set consisting of 20 observations.</p>
+<p>The in-sample error implies a 95% confidence interval for the accuracy of  (99.9%, 100%) which implies an estimate.</p>
+<p>for the out-of-sample error of (1-accuracy) (0%, 0.1%).
+<p>The lowest accurracy for the bootstrap samples (25 of them) was 100%; therefore, based on that I estimated an out of sample</p>
+<p>error rate of 0% (1-max(accuracy)).  However, this does not sound realistic.  On previous trials I saw estimated error rates of up to 4%.</p>
+<p>I expected the performance on the testing set to be worse than 4%, mainly due to possible overfitting; after having selected the best.</p>
+<p>model of 25 boostrap runs.</p>
+<p>As it turned out, when the results for the testing set were submitted, the model achieved 100% accuracy for the testing set consisting of 20 observations.</p>
 
 </body>
 
