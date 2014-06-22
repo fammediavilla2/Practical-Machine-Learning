@@ -150,7 +150,8 @@ hr {
 
 <p>We are mining the data from: <a href="http://groupware.les.inf.puc-rio.br/har">http://groupware.les.inf.puc-rio.br/har</a></p>
 
-<p>For this exercise I decided not to use the preprocesed data; namely the measures of location (i.e., quantiles, mean, medians) and dispersion provided (i.e., ranges and standard deviations).  In its stead, I used the variables which seem to be raw measurements (i.e, roll, pitch, yaw, gyros, accel, and magnet) for all sensors (i.e, belt, arm, and dumbbell).</p>
+<p>For this exercise I decided not to use the preprocesed data; namely the measures of location (i.e., quantiles, mean, medians) and dispersion provided (i.e., ranges and standard deviations).</p>  
+<p>In its stead, I used the variables which seem to be raw measurements (i.e, roll, pitch, yaw, gyros, accel, and magnet) for all sensors (i.e, belt, arm, and dumbbell).</p>
 
 <p>That accounts for a total of 38 variables; thus reducing the number of features from 160.</p>
 
@@ -164,7 +165,8 @@ hr {
 
 <h2>Method</strong></h2>
 
-<p>Based on the characteristics of the features, scale of measurements and their level of separation, I decided to try either Support Vector Machines or a Multinomial Logistic Regression to perform the classifications.</p>
+<p>Based on the characteristics of the features, scale of measurements and their level of separation, I decided to try either Support Vector Machines or a Multinomial Logistic Regression</p>
+<p>to perform the classifications.</p>
 
 <p>Follows my implementation of Logistic Regression found in the RWeka package, as implemented through the cater package. Twenty five bootstrap samples were used for cross-validation.
 </p>
@@ -256,7 +258,9 @@ hr {
 
 <h2>Expected Performance on Out of Sample</h2>
 
-<p>The performance on the training set was acceptable in predicting all categories of classe.  I expected the performance on the testing set to be worse.  As it turned out, when the results were submitted, the model achieved 100% accuracy for the testing set consisting of 20 observations.</p>
+<p>The performance on the training set was acceptable in predicting all categories of classe.</p>
+<p>I expected the performance on the testing set to be worse.</p>
+<p>As it turned out, when the results were submitted, the model achieved 100% accuracy for the testing set consisting of 20 observations.</p>
 
 </body>
 
